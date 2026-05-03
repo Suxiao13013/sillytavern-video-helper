@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+temp/
+output/
+*.mp4
+*.webp
+*.png
+*.jpg
+.env
+config.local.json
