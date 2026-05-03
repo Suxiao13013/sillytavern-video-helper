@@ -1,0 +1,54 @@
+{
+  "comfyui": {
+    "host": "your-comfyui-host.com",
+    "port": 8188,
+    "use_https": true,
+    "username": "your-username",
+    "password": "your-password"
+  },
+  "llm": {
+    "api_base": "https://api.openai.com/v1",
+    "api_key": "your-api-key",
+    "model": "gpt-4o-mini"
+  },
+  "image": {
+    "model": "revAnimated_v2Rebirth.safetensors",
+    "lora": "",
+    "lora_strength": 0.8,
+    "width": 768,
+    "height": 1280,
+    "steps": 28,
+    "cfg": 4.5,
+    "sampler": "euler",
+    "scheduler": "simple"
+  },
+  "video": {
+    "model": "wan2.1_i2v_480p_14B_fp8_e4m3fn.safetensors",
+    "frames": 81,
+    "fps": 16,
+    "width": 832,
+    "height": 480,
+    "steps": 30,
+    "cfg": 5.0
+  },
+  "post_processing": {
+    "rife_enabled": false,
+    "rife_multiplier": 2,
+    "upscale_enabled": false,
+    "upscale_model": "RealESRGAN_x4plus_anime_6B.pth",
+    "upscale_factor": 2
+  },
+  "scene": {
+    "detection": "auto",
+    "messages_per_scene": 5,
+    "max_scenes": 20,
+    "shots_per_scene": 4,
+    "seconds_per_shot": 5.0
+  },
+  "output": {
+    "dir": "./output",
+    "temp_dir": "./temp",
+    "format": "mp4",
+    "fps": 24
+  }
+}
